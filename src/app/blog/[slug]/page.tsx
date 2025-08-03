@@ -1,5 +1,7 @@
 import { notFound } from "next/navigation"
 
+
+
 const blogPosts = [
     {
         slug: "open-bank-account",
@@ -56,10 +58,17 @@ Track your monthly budget using tools like Splitwise or Excel.
 
 export async function generateStaticParams() {
     return blogPosts.map((post) => ({ slug: post.slug }))
+
+
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
-    const post = blogPosts.find((p) => p.slug === params.slug)
+type BlogPageProps = {
+    params: Promise<{ slug: string }>
+}
+
+export default async function BlogPostPage({ params }: BlogPageProps) {
+    const { slug} = await params
+    const post = blogPosts.find((p) => p.slug === slug)
 
     if (!post) return notFound()
 
