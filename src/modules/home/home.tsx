@@ -1,3 +1,5 @@
+import ChatLauncher from "@/components/chat-launcher"
+import ChatBot from "@/components/chatbot"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -43,7 +45,10 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
+            <div className="">
+                {/* Your homepage content here */}
+                <ChatLauncher />
+            </div>
             {/* Quick Links */}
             <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-2xl sm:text-3xl font-semibold mb-6 sm:mb-8 text-center text-gray-900">Quick Links</h2>
