@@ -1,6 +1,6 @@
 import Navbar from '@/components/layouts/navbar'
 import './globals.css'
-import Footer from '@/components/layouts/footer'
+import { Footer } from '@/components/layouts/footer'
 
 export const metadata = {
   title: 'Au stuverse',

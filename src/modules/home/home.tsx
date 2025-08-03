@@ -1,5 +1,4 @@
 import ChatLauncher from "@/components/chat-launcher"
-import ChatBot from "@/components/chatbot"
 import Image from "next/image"
 import Link from "next/link"
 
