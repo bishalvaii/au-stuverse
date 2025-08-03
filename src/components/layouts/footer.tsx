@@ -3,8 +3,8 @@ import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from "lucide-re
 
 export function Footer() {
     return (
-        <footer className="bg-gray-200 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="container grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 px-4 md:px-6">
+        <footer className="bg-gray-200  mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <div className="max-w-7xl grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-4 px-4 md:px-6">
                 <div className="space-y-4">
                     <h3 className="text-lg font-bold text-primary">Stuverse</h3>
                     <p className="text-sm text-muted-foreground">
